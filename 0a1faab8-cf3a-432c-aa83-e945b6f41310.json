@@ -1,0 +1,43 @@
+{
+    "transactions": [
+        {
+            "Timestamp": "2022/09/02 16:05",
+            "From Bank": 121698,
+            "Account": "80C32DDC0",
+            "To Bank": 149758,
+            "Account.1": "813478610",
+            "Amount Received": 45.14,
+            "Receiving Currency": "US Dollar",
+            "Amount Paid": 45.14,
+            "Payment Currency": "US Dollar",
+            "Payment Format": "Credit Card",
+            "Is Laundering": 0
+        },
+        {
+            "Timestamp": "2022/09/05 20:14",
+            "From Bank": 210404,
+            "Account": "8072E34D0",
+            "To Bank": 121698,
+            "Account.1": "80C32DDC0",
+            "Amount Received": 10749.28,
+            "Receiving Currency": "US Dollar",
+            "Amount Paid": 10749.28,
+            "Payment Currency": "US Dollar",
+            "Payment Format": "Cheque",
+            "Is Laundering": 0
+        },
+        {
+            "Timestamp": "2022/09/09 09:19",
+            "From Bank": 210404,
+            "Account": "8072E34D0",
+            "To Bank": 121698,
+            "Account.1": "80C32DDC0",
+            "Amount Received": 15557.48,
+            "Receiving Currency": "US Dollar",
+            "Amount Paid": 15557.48,
+            "Payment Currency": "US Dollar",
+            "Payment Format": "ACH",
+            "Is Laundering": 0
+        }
+    ]
+}
