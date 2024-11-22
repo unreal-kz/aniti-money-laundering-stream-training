@@ -1,6 +1,7 @@
-pandas
-xgboost
-scikit-learn
-networkx
+numpy<2
 snapml
 tqdm
+networkx
+xgboost
+pandas
+scikit-learn

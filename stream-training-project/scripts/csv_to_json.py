@@ -3,7 +3,6 @@ import argparse
 import pandas as pd
 import json
 from collections import defaultdict
-from tqdm import tqdm
 from uuid import uuid4
 
 
@@ -40,11 +39,13 @@ def main(csv_file_path, jsons_dir, chunksize, account_json_mapping_dst):
     os.makedirs(jsons_dir, exist_ok=True)
     account_json_mapping = defaultdict(list)
     with pd.read_csv(csv_file_path, chunksize=chunksize) as reader:
+        total_chunks = sum(1 for _ in reader)
+    
+    with pd.read_csv(csv_file_path, chunksize=chunksize) as reader:
         idx_folder = 0
-        for chunk in tqdm(reader, desc='Processing transactions'):
+        for chunk in reader:
             idx_folder += 1
             process_chunk(chunk, jsons_dir, str(idx_folder), account_json_mapping)
-
     with open(account_json_mapping_dst, 'w') as f:
         json.dump(account_json_mapping, f, indent=4)
 
